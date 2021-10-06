@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Patrik Đurđević</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<style>
+		* {
+			font-family: 'Inter', sans-serif !important;
+		}
+		.uk-text-white {
+			color: white;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="uk-height-viewport uk-light" uk-sticky="bottom: #heading" style="z-index: 1; background-color: rgb(51, 41, 59)">
+			<div class="uk-position-center uk-text-center">
+				<img class="uk-animation-shake" src="me.jpg" style="height: 200px; width: 200px; border-radius: 100px;">
+				<h2 class="uk-heading-large uk-animation-fade" style="font-weight: 500;">Hello.</h2>
+			</div>
+		</div>
+		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 50vh 0;">
+			<div class="uk-container">
+				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
+					<span class="uk-text-white" uk-icon="icon: database; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
+					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Data Science.</h2>
+				</div>
+			</div>
+			<div class="uk-container">
+				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
+					<span class="uk-text-white" uk-icon="icon: world; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
+					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Business.</h2>
+				</div>
+			</div>
+			<div class="uk-container">
+				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
+					<span class="uk-text-white" uk-icon="icon: comments; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
+					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Communication.</h2>
+				</div>
+			</div>
+			<div class="uk-text-center uk-height-viewport" style="padding-top: 50vh;">
+				<h3 uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200" style="font-weight: 500;">Patrik Đurđević</h3>
+				<h2 class="uk-heading-large" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200" style="font-weight: 600; margin-top: 0;">Business driven<br>data scientist.</h2>
+				<a class="uk-link-muted" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200" href="#">Read the CV<span uk-icon="chevron-right"></span></a>
+			</div>
+		</div>
+	</body>
+</html>
