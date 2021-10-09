@@ -29,8 +29,46 @@
 		.uk-container-small {
 			max-width: 1000px;
 		}
+		.uk-container-big {
+			max-width: 100%;
+		}
 		.uk-card {
 			border-radius: 30px;
+		}
+		.uk-card-title {
+			font-size: 21px;
+			font-weight: 600;
+		}
+		.uk-text-card-small {
+			font-size: 21px;
+			font-weight: 400;
+		}
+		.uk-text-card-xsmall {
+			font-size: 17px;
+			line-height: 1.4211;
+			font-weight: 500;
+			letter-spacing: .012em;
+		}
+		.uk-text-card {
+			font-size: 28px;
+			font-weight: 500;
+		}
+		.uk-heading-card {
+			font-size: 96px;
+			letter-spacing: -.015em;
+			line-height: 1.04167;
+			font-weight: 700;
+		}
+		.uk-heading-card-small {
+			font-size: 40px;
+			line-height: 1.07143;
+			font-weight: 700;
+			letter-spacing: -.028em;
+		}
+		@media only screen and (min-width: 768px) {
+			.uk-heading-card-small {
+				font-size: 48px;
+			}
 		}
 		</style>
 	</head>
@@ -44,19 +82,19 @@
 		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 50vh 0 0 0;">
 			<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<span class="uk-text-white" uk-icon="icon: user; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
+					<!--<span class="uk-text-white" uk-icon="icon: user; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>-->
 					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">20 year old</h2>
 				</div>
 			</div>
 			<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<span class="uk-text-white" uk-icon="icon: database; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
+					<!--<span class="uk-text-white" uk-icon="icon: database; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>-->
 					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Data Scientist</h2>
 				</div>
 			</div>
 			<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<span class="uk-text-white" uk-icon="icon: world; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
+					<!--<span class="uk-text-white" uk-icon="icon: world; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>-->
 					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">From Croatia</h2>
 				</div>
 			</div>
@@ -71,36 +109,63 @@
 				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">University of Zagreb</h2>
 				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Faculty of Electrical Engineering and Computing</h2>
 				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">In 2019 I enrolled into the most prestigious university in Croatia. I decided to study Computer Science as it has always been my dream from when I was still in elementary school.</p>
-				<img src="fer.png" uk-scrollspy="cls: uk-animation-fade; delay: 200" style="padding-top: 40px">
+				<img src="fer.png" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 			</div>
-			<div class="uk-container" style="position: relative; top: -50px">
-				<div class="uk-grid-match uk-child-width-1-2@m uk-grid-large" uk-grid>
+			<div class="uk-container uk-container-big" style="position: relative; top: -50px">
+				<div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
 					<div>
-						<div class="uk-card uk-card-body uk-background-dark" style="background: #181725;">
-							<h3 class="uk-card-title">Statistics</h3>
-							<div class="uk-text-center">
-								<div class="uk-padding-small">
-									<p class="uk-padding-small" style="margin: 0">Weighted GPA</p>
-									<h3 class="uk-heading-small" style="font-weight: 700; margin: 0;">4.83</h3>
-									<p style="margin: 0">/ 5.0</p>
-								</div>
-								<div class="uk-padding-small">
-									<p class="uk-padding-small" style="margin: 0">Top</p>
-									<h3 class="uk-heading-small" style="font-weight: 700; margin: 0;">10%</h3>
-									<p style="margin: 0">of students</p>
+						<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%);">
+							<h3 class="uk-card-title">Degree</h3>
+							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto uk-text-center">
+								<div style="margin-bottom: 30px;">
+									<img src="FER_logo.png" style="width: 150px; margin: 30px 0;">
+									<p class="uk-text-card-small uk-text-white" style="margin: 0; font-size: 44px; line-height: 1.08349; font-weight: 700;">BSc Computing</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="uk-card uk-card-body uk-background-dark">
-							<h3 class="uk-card-title">Final BSc Thesis</h3>
-							<div>
-								<h3 class="uk-text-large" style="font-weight: 600;">I am doing my Final BSc Thesis in collaboration with TakeLab on the subject of Natural Language Processing. TakeLab is the Text Analysis and Knowledge Engineering Lab specialize in natural language processing, machine learning, and text analytics.</h3>
-								<div class="uk-text-center uk-padding-large">
-									<img src="takelab.png" style="height: 100px; width: 100px">
+						<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: #181725;">
+							<h3 class="uk-card-title">Achievements</h3>
+							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto uk-text-center">
+								<div style="margin: 30px 0;">
+									<p class="uk-text-card-small uk-text-white" style="margin: 0">Weighted GPA</p>
+									<h3 class="uk-heading-card" style="margin: 0;">4.83</h3>
+									<p class="uk-text-card-small uk-text-white" style="margin: 0">/ 5.0</p>
+								</div>
+								<div style="margin: 0 0 30px 0;">
+									<p class="uk-text-card-small uk-text-white" style="margin: 0">Top</p>
+									<h3 class="uk-heading-card" style="margin: 0;">10%</h3>
+									<p class="uk-text-card-small uk-text-white" style="margin: 0">of students</p>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column">
+							<h3 class="uk-card-title">Final BSc Thesis</h3>
+							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto" style="margin: 60px 0">
+								<span class="uk-text-white" uk-icon="icon: file-text; ratio: 3" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: white; margin-left: -8px"></span>
+								<h3 class="uk-text-card" style="margin: 10px 0 0 0;">I am doing my Final BSc Thesis in collaboration with TakeLab on the subject of Natural Language Processing.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%); margin-top: 15px;">
+						<h3 class="uk-card-title">Computer Science Competition</h3>
+						<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto" style="margin: 60px 0; max-width: 600px;">
+							<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">3rd place at the National competition to quality for ICPC CERC</h3>
+							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">In November 2020, my team and I earned 3rd place at the Competition of teams of computer science students from Croatian universities. The podium qualified us for the ICPC Central European Regional Contest (CERC). Due to the ongoing pandemic, the CERC was held online in September 2021 where we ended up being 30th.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: rgb(139, 125, 115); margin-top: 15px;">
+						<h3 class="uk-card-title">Data Science Competition</h3>
+						<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto" style="margin: 60px 0; max-width: 600px;">
+							<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">Best presentation & 4th place at LUMEN Data Science</h3>
+							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">In June 2020, my team and I earned 4th place and the award for best presentation at LUMEN Data Science 2020. The topic of the competition was Predictive Maintenance. Even though we were just getting to know the field of data science, we managed to create a solid solution for the given problem. We were aware of our inexperience which is why we had to do our best to create a good storyline and sell our solution to the panel of judges.</p>
 						</div>
 					</div>
 				</div>
