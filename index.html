@@ -3,11 +3,11 @@
 	<head>
 		<title>Patrik Đurđević</title>
 		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <script src="js/uikit.min.js"></script>
-        <script src="js/uikit-icons.min.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/uikit.min.css" />
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<style>
@@ -16,6 +16,21 @@
 		}
 		.uk-text-white {
 			color: white;
+		}
+		.uk-background-black {
+			background-color: black;
+		}
+		.uk-background-dark {
+			background-color: rgb(21, 21, 22);
+		}
+		.uk-text-muted {
+			color: #A1A1A6;
+		}
+		.uk-container-small {
+			max-width: 1000px;
+		}
+		.uk-card {
+			border-radius: 30px;
 		}
 		</style>
 	</head>
@@ -26,7 +41,7 @@
 				<h2 class="uk-heading-large uk-animation-fade" style="font-weight: 500;">Hello.</h2>
 			</div>
 		</div>
-		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 50vh 0;">
+		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 50vh 0 0 0;">
 			<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
 					<span class="uk-text-white" uk-icon="icon: user; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
@@ -46,9 +61,49 @@
 				</div>
 			</div>
 			<div class="uk-text-center uk-height-viewport" style="padding-top: 50vh;">
-				<h3 uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200" style="font-weight: 500;">Patrik Đurđević</h3>
-				<h2 class="uk-heading-large" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200" style="font-weight: 600; margin-top: 0;">Business driven<br>data scientist.</h2>
-				<a class="uk-link-muted" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200" href="#">Read the CV<span uk-icon="chevron-right"></span></a>
+				<h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 500;">Patrik Đurđević</h3>
+				<h2 class="uk-heading-large" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Business driven<br>data scientist.</h2>
+				<a class="uk-link-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" href="#">Read the CV<span uk-icon="chevron-right"></span></a>
+			</div>
+		</div>
+		<div class="uk-light uk-background-black">
+			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
+				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">University of Zagreb</h2>
+				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Faculty of Electrical Engineering and Computing</h2>
+				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">In 2019 I enrolled into the most prestigious university in Croatia. I decided to study Computer Science as it has always been my dream from when I was still in elementary school.</p>
+				<img src="fer.png" uk-scrollspy="cls: uk-animation-fade; delay: 200" style="padding-top: 40px">
+			</div>
+			<div class="uk-container" style="position: relative; top: -50px">
+				<div class="uk-grid-match uk-child-width-1-2@m uk-grid-large" uk-grid>
+					<div>
+						<div class="uk-card uk-card-body uk-background-dark" style="background: #181725;">
+							<h3 class="uk-card-title">Statistics</h3>
+							<div class="uk-text-center">
+								<div class="uk-padding-small">
+									<p class="uk-padding-small" style="margin: 0">Weighted GPA</p>
+									<h3 class="uk-heading-small" style="font-weight: 700; margin: 0;">4.83</h3>
+									<p style="margin: 0">/ 5.0</p>
+								</div>
+								<div class="uk-padding-small">
+									<p class="uk-padding-small" style="margin: 0">Top</p>
+									<h3 class="uk-heading-small" style="font-weight: 700; margin: 0;">10%</h3>
+									<p style="margin: 0">of students</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-body uk-background-dark">
+							<h3 class="uk-card-title">Final BSc Thesis</h3>
+							<div>
+								<h3 class="uk-text-large" style="font-weight: 600;">I am doing my Final BSc Thesis in collaboration with TakeLab on the subject of Natural Language Processing. TakeLab is the Text Analysis and Knowledge Engineering Lab specialize in natural language processing, machine learning, and text analytics.</h3>
+								<div class="uk-text-center uk-padding-large">
+									<img src="takelab.png" style="height: 100px; width: 100px">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
