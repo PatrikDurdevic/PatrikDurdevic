@@ -65,6 +65,20 @@
 			font-weight: 700;
 			letter-spacing: -.028em;
 		}
+		.uk-button-custom {
+			width: auto;
+			padding: 5px 20px;
+			border-radius: 20px;
+			border-color: white !important;
+			height: 40px;
+			border-width: 2px;
+			margin-top: 30px;
+			font-size: 14px;
+			line-height: 1.4211;
+			font-weight: 500;
+			letter-spacing: .012em;
+			cursor: pointer;
+		}
 		@media only screen and (min-width: 768px) {
 			.uk-heading-card-small {
 				font-size: 48px;
@@ -73,35 +87,35 @@
 		</style>
 	</head>
 	<body>
-		<div class="uk-height-viewport uk-light" uk-sticky="bottom: #heading" style="z-index: 1; background-color: rgb(51, 41, 59)">
+		<div class="uk-height-viewport uk-light uk-background-dark" uk-sticky="bottom: #heading" style="z-index: 1;">
 			<div class="uk-position-center uk-text-center">
 				<img class="uk-animation-shake" src="me.jpg" style="height: 200px; width: 200px; border-radius: 100px;">
 				<h2 class="uk-heading-large uk-animation-fade" style="font-weight: 500;">Hello.</h2>
 			</div>
 		</div>
-		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 50vh 0 0 0;">
-			<div class="uk-container">
+		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 20vh 0;">
+			<!--<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<!--<span class="uk-text-white" uk-icon="icon: user; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>-->
+					<span class="uk-text-white" uk-icon="icon: user; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
 					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">20 year old</h2>
 				</div>
 			</div>
 			<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<!--<span class="uk-text-white" uk-icon="icon: database; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>-->
+					<span class="uk-text-white" uk-icon="icon: database; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
 					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Data Scientist</h2>
 				</div>
 			</div>
 			<div class="uk-container">
 				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<!--<span class="uk-text-white" uk-icon="icon: world; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>-->
+					<span class="uk-text-white" uk-icon="icon: world; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
 					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">From Croatia</h2>
 				</div>
-			</div>
-			<div class="uk-text-center uk-height-viewport" style="padding-top: 50vh;">
+			</div>-->
+			<div class="uk-text-center">
 				<h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 500;">Patrik Đurđević</h3>
 				<h2 class="uk-heading-large" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Business driven<br>data scientist.</h2>
-				<a class="uk-link-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" href="#">Read the CV<span uk-icon="chevron-right"></span></a>
+				<!--<a class="uk-link-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" href="#">Read the CV<span uk-icon="chevron-right"></span></a>-->
 			</div>
 		</div>
 		<div class="uk-light uk-background-black">
@@ -163,9 +177,10 @@
 				<div>
 					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: rgb(139, 125, 115); margin-top: 15px;">
 						<h3 class="uk-card-title">Data Science Competition</h3>
-						<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto" style="margin: 60px 0; max-width: 600px;">
+						<div class="uk-flex uk-flex-column uk-flex-center uk-flex-auto uk-flex-top" style="margin: 60px 0; max-width: 600px;">
 							<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">Best presentation & 4th place at LUMEN Data Science</h3>
 							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">In June 2020, my team and I earned 4th place and the award for best presentation at LUMEN Data Science 2020. The topic of the competition was Predictive Maintenance. Even though we were just getting to know the field of data science, we managed to create a solid solution for the given problem. We were aware of our inexperience which is why we had to do our best to create a good storyline and sell our solution to the panel of judges.</p>
+							<button onclick="window.open('https://github.com/PatrikDurdevic/LUMEN-Data-Science-2020-Predictive-Maintenance')" class="uk-button-default uk-button-custom">Explore the solution</button>
 						</div>
 					</div>
 				</div>
