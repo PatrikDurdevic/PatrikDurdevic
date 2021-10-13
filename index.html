@@ -105,6 +105,16 @@
 		li h6 span.uk-badge {
 			margin-right: 5px;
 		}
+		.uk-text-gradient {
+			background: -webkit-repeating-linear-gradient(0deg, #7F7FD5, #91EAE4) !important;
+  			-webkit-background-clip: text !important;
+  			-webkit-text-fill-color: transparent !important;
+		}
+		.uk-text-gradient2 {
+			background: -webkit-repeating-linear-gradient(0deg,#e436ff,#ff5bae) !important;
+			-webkit-background-clip: text !important;
+  			-webkit-text-fill-color: transparent !important;
+		}
 		</style>
 	</head>
 	<body>
@@ -114,25 +124,7 @@
 				<h2 class="uk-heading-large uk-animation-fade" style="font-weight: 500;">Hello.</h2>
 			</div>
 		</div>
-		<div id="heading" class="uk-light uk-position-z-index" style="z-index: 2; position: relative; background-color: rgb(21, 33, 56); padding: 20vh 0;">
-			<!--<div class="uk-container">
-				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<span class="uk-text-white" uk-icon="icon: user; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
-					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">20 year old</h2>
-				</div>
-			</div>
-			<div class="uk-container">
-				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<span class="uk-text-white" uk-icon="icon: database; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
-					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Data Scientist</h2>
-				</div>
-			</div>
-			<div class="uk-container">
-				<div class="uk-text-center uk-padding-large" uk-parallax="opacity: 0,0.25,0.75,1,0,0; viewport: 0.85">
-					<span class="uk-text-white" uk-icon="icon: world; ratio: 4" uk-parallax="stroke: 0,0,100%; viewport: 0.4" style="color: rgb(243, 172, 173);"></span>
-					<h2 class="uk-heading-medium" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">From Croatia</h2>
-				</div>
-			</div>-->
+		<div id="heading" class="uk-position-z-index" style="z-index: 2; position: relative; background-color: white; padding: 20vh 0;">
 			<div class="uk-text-center">
 				<h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 500;">Patrik Đurđević</h3>
 				<h2 class="uk-heading-large" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Business driven<br>data scientist.</h2>
@@ -140,11 +132,92 @@
 				<a class="uk-link-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" href="#" style="margin: 0 10px">Read&nbsp;recommendations<span uk-icon="chevron-right"></span></a>
 			</div>
 		</div>
+		<div class="uk-light uk-background-dark" style="padding: 20vh 0;">
+			<div class="uk-container">
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Welcome to my story!</h2>
+				</div>
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">To begin with</h2>
+				</div>
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">Let me tell you about my education.</h2>
+				</div>
+			</div>
+		</div>
 		<div class="uk-light uk-background-black">
+			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
+				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">High School</h2>
+				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">XV. Gimnazija - MIOC</h2>
+				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">In 2015, after completing elementary school, I was honored to have been accepted to the best high school in Croatia for mathematics and computer science. I owe my enrollment mostly to the national computer science competition that spring where I won 3rd place.</p>
+				<img src="mioc.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 200">
+			</div>
+			<div class="uk-container uk-container-big" style="position: relative; top: -50px">
+				<div>
+					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%); margin-top: 15px;">
+						<h3 class="uk-card-title">Computer Science Competition</h3>
+						<div class="uk-flex-auto uk-flex uk-child-width-1-2@m uk-grid" uk-grid>
+							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-top" style="margin: 0 0;">
+								<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">1st place at the American Computer Science League</h3>
+								<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">In May 2016, my team from high school and I travelled to Boston, USA for the ACSL 2016 All-Star Contest. The contest was held in Nashua, NH, USA. Even though the competition was fierce with contestants from all around the world, we still had time left over during the competition to play some cards.</p>
+							</div>
+							<div class="uk-flex uk-flex-column uk-flex-center">
+								<img class="uk-img-feature" src="acsl-cards.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="margin-top: 15px;">
+						<h3 class="uk-card-title">Competitions & Awards</h3>
+						<div class="uk-flex-auto uk-flex uk-child-width-1@m uk-grid" uk-grid>
+							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0"></p>
+							<ul class="uk-list uk-list-divider">
+								<li>
+									<h6>American Computer Science League <span class="uk-badge">1st place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">May 2016</span></h6>
+									<p>ACSL organizes computer science contests and computer programming contests for elementary, junior, and senior high school students. At the 2016 All-Star Contest, which was held in Nashua, NH, USA, my team and I won first place.</p>
+								</li>
+								<li>
+									<h6>Oscar of Knowledge <span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">June 2016</span></h6>
+									<p>Oscar of knowledge is the most significant Croatian award and recognition in education, and it is awarded for the outstanding success and achievements of students at national and international competitions. The award ceremony is organised in the cooperation with the Agency for Education, the Ministry of Science and Education and the Croatian County Council.</p>
+								</li>
+								<li>
+									<h6>Croatian national computer science competition <span class="uk-badge">8th place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">March 2017</span></h6>
+									<p>The algorithms category of the Croatian national computer science competition challenges students to solve complex problems where their task is to write a piece of code in the C++ programming language which will solve the problem in the most efficient and fastest way possible (the task is to solve a problem while keeping the execution time and memory usage to a minimum).</p>
+								</li>
+								<li>
+									<h6>Croatian national computer science competition <span class="uk-badge">8th place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">March 2019</span></h6>
+									<p></p>
+								</li>
+								<li>
+									<h6>American Computer Science League <span class="uk-badge">3rd place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">May 2019</span></h6>
+									<p>At the 2019 All-Star Contest, which was held in Wayne, NJ, USA, my team and I won third place.</p>
+								</li>
+								<li>
+									<h6>Oscar of Knowledge <span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">June 2019</span></h6>
+									<p></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%); margin-top: 15px;">
+						<h3 class="uk-card-title">Certificate</h3>
+						<div class="uk-flex-auto uk-flex uk-child-width-1-1@m uk-grid" uk-grid>
+							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-top" style="margin: 0 0;">
+								<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">Cambridge C1 Advanced at Grade A</h3>
+								<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">Since I started my elementary school I had gone to extra English classes outside school. In June 2018, I decided to take the what was then known as Cambridge English: Advanced (CAE) exam. I ended up passing at Grade A with CEFR Level C2.</p>
+								<button onclick="window.open('https://hipatrik.com/CAE.pdf')" class="uk-button-default uk-button-custom">View Statement of Results</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
 				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">University of Zagreb</h2>
 				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Faculty of Electrical Engineering and Computing</h2>
-				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">In 2019 I enrolled into the most prestigious university in Croatia. I decided to study Computer Science as it has always been my dream from when I was still in elementary school.</p>
+				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">After graduating from MIOC, I enrolled into the most prestigious university in Croatia in 2019. I decided to study Computer Science as it has always been my dream from when I was still in elementary school. Following the first semester, I started thinking what part of Computer Science field I wanted to focus on. Having had some discussions with experienced professionals from the field, I came across the field of Data Science. Let's just say I fell in love with it.</p>
 				<img src="fer_low.png" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 			</div>
 			<div class="uk-container uk-container-big" style="position: relative; top: -50px">
@@ -222,7 +295,7 @@
 					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="margin-top: 15px;">
 						<h3 class="uk-card-title">Certificates</h3>
 						<div class="uk-flex-auto uk-flex uk-child-width-1@m uk-grid" uk-grid>
-							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">When the COVID-19 pandemic hit, I realized that I could either use my free time for somehting good or start watching TV shows.</p>
+							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">When the COVID-19 pandemic hit, I realized that I could either be sitting around watching TV shows or learning and improving myself. The only decision I had to make was where to start.</p>
 							<ul class="uk-list uk-list-divider">
 								<li>
 									<h6>TensorFlow Developer Certificate <span class="uk-badge">Google</span></h6>
@@ -252,7 +325,7 @@
 			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
 				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">MITx MicroMasters Program</h2>
 				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Statistics and Data Science</h2>
-				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">When I really started researching the field of data science and about the time I realized it's something I want to be doing in my life, I came across this well designed programme. All the courses of this program are taught by MIT faculty and administered by Institute for Data, Systems, and Society (IDSS), at a similar pace and level of rigor as an on-campus course at MIT. This program brings MIT’s rigorous, high-quality curricula and hands-on learning approach to learners around the world—at scale.</p>
+				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">The question of where to start learning Data Science outside my university was not an easy one. Which is why I was delighted when I came across the MicroMasters SDS. All the courses of this program are taught by MIT faculty and administered by Institute for Data, Systems, and Society (IDSS), at a similar pace and level of rigor as an on-campus course at MIT. This program brings MIT’s rigorous, high-quality curricula and hands-on learning approach to learners around the world—at scale.</p>
 				<img src="mit_low.png" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 			</div>
 			<div class="uk-container uk-container-big" style="position: relative; top: -50px">
@@ -290,74 +363,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
-				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">High School</h2>
-				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">XV. Gimnazija - MIOC</h2>
-				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">In 2015 I was delighted to have been accepted to the best high school in Croatia for mathematics and computer science.</p>
-				<img src="mioc.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 200">
+		</div>
+		<div class="uk-light uk-background-dark" style="padding: 20vh 0;">
+			<div class="uk-container">
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient2" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">After having felt to have gained enough theoretical knowledge</h2>
+				</div>
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient2" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">in the field of Data Science.</h2>
+				</div>
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient2" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">I started looking for opportunities</h2>
+				</div>
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient2" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">to apply my knowledge in the industry</h2>
+				</div>
+				<div class="uk-text-left uk-padding" uk-parallax="opacity: 0,0,1; viewport: 0.25">
+					<h2 class="uk-heading-medium uk-text-gradient2" uk-parallax="y: 50,0" style="font-weight: 600; margin-top: 10px; margin-bottom: 0;">and gain real-life experience.</h2>
+				</div>
 			</div>
-			<div class="uk-container uk-container-big" style="position: relative; top: -50px">
-				<div>
-					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%); margin-top: 15px;">
-						<h3 class="uk-card-title">Computer Science Competition</h3>
-						<div class="uk-flex-auto uk-flex uk-child-width-1-2@m uk-grid" uk-grid>
-							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-top" style="margin: 0 0;">
-								<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">1st place at the American Computer Science League</h3>
-								<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">In May 2016, my team from high school and I travelled to Boston, USA for the ACSL 2016 All-Star Contest. The contest was held in Nashua, NH, USA. Even though the competition was fierce with contestants from all around the world, we still had some time left over during the competition to play some cards.</p>
-							</div>
-							<div class="uk-flex uk-flex-column uk-flex-center">
-								<img class="uk-img-feature" src="acsl-cards.jpg">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="margin-top: 15px;">
-						<h3 class="uk-card-title">Competitions & Awards</h3>
-						<div class="uk-flex-auto uk-flex uk-child-width-1@m uk-grid" uk-grid>
-							<p class="uk-text-card-xsmall uk-text-white" style="margin: 0"></p>
-							<ul class="uk-list uk-list-divider">
-								<li>
-									<h6>American Computer Science League <span class="uk-badge">1st place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">May 2016</span></h6>
-									<p>ACSL organizes computer science contests and computer programming contests for elementary, junior, and senior high school students. At the 2016 All-Star Contest, which was held in Nashua, NH, USA, my team and I won first place.</p>
-								</li>
-								<li>
-									<h6>Oscar of Knowledge <span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">June 2016</span></h6>
-									<p>Oscar of knowledge is the most significant Croatian award and recognition in education, and it is awarded for the outstanding success and achievements of students at national and international competitions. The award ceremony is organised in the cooperation with the Agency for Education, the Ministry of Science and Education and the Croatian County Council.</p>
-								</li>
-								<li>
-									<h6>Croatian national computer science competition <span class="uk-badge">8th place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">March 2017</span></h6>
-									<p>The algorithms category of the Croatian national computer science competition challenges students to solve complex problems where their task is to write a piece of code in the C++ programming language which will solve the problem in the most efficient and fastest way possible (the task is to solve a problem while keeping the execution time and memory usage to a minimum).</p>
-								</li>
-								<li>
-									<h6>Croatian national computer science competition <span class="uk-badge">8th place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">March 2019</span></h6>
-									<p></p>
-								</li>
-								<li>
-									<h6>American Computer Science League <span class="uk-badge">3rd place</span><span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">May 2019</span></h6>
-									<p>At the 2019 All-Star Contest, which was held in Wayne, NJ, USA, my team and I won third place.</p>
-								</li>
-								<li>
-									<h6>Oscar of Knowledge <span class="uk-badge" style="background-color: rgb(70, 70, 70); color: rgb(170, 170, 170) !important;">June 2019</span></h6>
-									<p></p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%); margin-top: 15px;">
-						<h3 class="uk-card-title">Certificate</h3>
-						<div class="uk-flex-auto uk-flex uk-child-width-1-1@m uk-grid" uk-grid>
-							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-top" style="margin: 0 0;">
-								<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">Cambridge C1 Advanced at Grade A</h3>
-								<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">Since I started my elementary school I had gone to extra English classes outside school. In June 2018, I decided to take the what was then known as Cambridge English: Advanced (CAE) exam. I ended up passing at Grade A with CEFR Level C2.</p>
-								<button onclick="window.open('https://hipatrik.com/CAE.pdf')" class="uk-button-default uk-button-custom">View Statement of Results</button>
-							</div>
-						</div>
-					</div>
-				</div>
-
+		</div>
+		<div class="uk-light uk-background-black">
+			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
+				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">Zagrebačka banka d.d.</h2>
+				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Data Science Intern</h2>
+				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">TODO.</p>
+				<img src="zaba.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 			</div>
 		</div>
 	</body>
