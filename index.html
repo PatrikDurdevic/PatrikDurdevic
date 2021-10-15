@@ -107,13 +107,16 @@
 		}
 		.uk-text-gradient {
 			background: -webkit-repeating-linear-gradient(0deg, #7F7FD5, #91EAE4) !important;
-  			-webkit-background-clip: text !important;
-  			-webkit-text-fill-color: transparent !important;
+			-webkit-background-clip: text !important;
+			-webkit-text-fill-color: transparent !important;
 		}
 		.uk-text-gradient2 {
 			background: -webkit-repeating-linear-gradient(0deg,#e436ff,#ff5bae) !important;
 			-webkit-background-clip: text !important;
-  			-webkit-text-fill-color: transparent !important;
+			-webkit-text-fill-color: transparent !important;
+		}
+		.uk-slideshow-items {
+			border-radius: 30px; overflow: hidden;
 		}
 		</style>
 	</head>
@@ -292,6 +295,35 @@
 					</div>
 				</div>
 				<div>
+					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%); margin-top: 15px;">
+						<h3 class="uk-card-title">Business Competition</h3>
+						<div class="uk-flex-auto uk-flex uk-child-width-1-2@m uk-grid" uk-grid>
+							<div class="uk-flex uk-flex-column uk-flex-center uk-flex-top" style="margin: 0 0;">
+								<h3 class="uk-heading-card-small" style="margin: 0 0 30px 0">1st place at the Entrepreneurial Sprint</h3>
+								<p class="uk-text-card-xsmall uk-text-white" style="margin: 0">Even though Data Science is my main focus, business is something I have always been in love with as well. That's why when I saw an ad for this competition online, I immediately registered. The competition consisted of various educational workshops where we learned enterpreneurial skills. At the end, we had to pitch our idea to a panel of judges among which was Filip Ljubić (Founder & CEO of Q Agency). My team and I developed an idea for a smart knob for hotel industry which would remove receptions altogether.</p>
+							</div>
+							<div class="uk-flex uk-flex-column uk-flex-center">
+								<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
+
+									<ul class="uk-slideshow-items">
+										<li>
+											<img src="ps_01.jpg" alt="" uk-cover>
+										</li>
+										<li>
+											<img src="ps_02.jpg" alt="" uk-cover>
+										</li>
+									</ul>
+
+									<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+									<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+								</div>
+								<!--<img class="uk-img-feature" src="cerc_low.png">-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
 					<div class="uk-card uk-card-body uk-background-dark uk-flex uk-flex-column" style="margin-top: 15px;">
 						<h3 class="uk-card-title">Certificates</h3>
 						<div class="uk-flex-auto uk-flex uk-child-width-1@m uk-grid" uk-grid>
@@ -387,7 +419,7 @@
 			<div class="uk-container uk-container-small uk-padding-large uk-padding-remove-bottom">
 				<h2 class="uk-heading-small uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin: 0;">Zagrebačka banka d.d.</h2>
 				<h2 class="uk-heading-small" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200" style="font-weight: 600; margin-top: 0;">Data Science Intern</h2>
-				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">TODO.</p>
+				<p class="uk-text-large uk-text-muted" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200">In December of 2020, I was given the opportunity to start working as a Data Science Intern at Zagrebačka banka (the leading bank in Croatia).</p>
 				<img src="zaba.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 			</div>
 		</div>
